@@ -1,12 +1,43 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import Navbar from './navbar';
+import Logo from './logo';
+import Service from './service';
+import Compatibility from './compatibility';
+import Maintenance from './maintenance';
+import About from './about';
+import Products from './products';
+import Main from './main';
 
-ReactDOM.render(<App />, document.getElementById('root'));
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+import { BrowserRouter, Route} from "react-router-dom";
+
+
+ 
+class App extends React.Component {
+    render () {
+        return (
+        <div>
+        <Logo />
+        <Navbar />
+        <BrowserRouter> 
+            <Route path="/service" component={Service}/>  
+            <Route path="/service/1" component={Service}/>
+            <Route path="/compatibility" component={Compatibility}/>
+            <Route path="/maintenance" component={Maintenance}/>  
+            <Route path="/about" component={About}/>  
+            <Route path="/products" component={Products}/>
+            <Route path="/" exact component={Main}/>    
+        </BrowserRouter>  
+        </div>
+        );
+    }
+}
+ 
+ReactDOM.render(
+    <App/>,
+    document.querySelector('#root')
+);
+
+export default App;
