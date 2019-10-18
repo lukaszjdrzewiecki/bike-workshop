@@ -26,7 +26,6 @@ code {
   margin-top: 30px;
   width: 10%;
   height: 300px;
-  border-right: 1px solid rgba(0, 0, 0, 0.25);
   display: inline-block;
 }
 
@@ -34,8 +33,9 @@ code {
   margin-top: 30px;
   width: 90%;
   display: inline-block;
-  margin-left: 30px;
-  margin-right: 30px;
+  border-right: 1px solid rgba(0, 0, 0, 0.25);
+  border-left: 1px solid rgba(0, 0, 0, 0.25);
+  padding: 0 6% 0 6%;
 }
 
 .navbar {
@@ -124,7 +124,7 @@ border: none;
 }
 
 .text-block {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
   position: absolute;
   bottom: 30px;
   left: 180px;
@@ -136,10 +136,85 @@ border: none;
 }
 
 .text-field {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-align: justify;
   text-justify: inter-word;
   color: black;
   font-size: 16px;
   margin-bottom: 12px;
+}
+
+.challengeBar {
+  width: 30%;
+  height: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  display: inline-block;
+  -webkit-box-shadow: -1px 15px 34px -19px rgba(0,0,0,0.7);
+-moz-box-shadow: -1px 15px 34px -19px rgba(0,0,0,0.7);
+box-shadow: -1px 15px 34px -19px rgba(0,0,0,0.7);
+}
+
+.challengeBar25 {
+  width: 25%;
+  height: 100%;
+  background-color: #009933;
+  border-right: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.challengeBar50 {
+  width: 50%;
+  height: 100%;
+  background-color: gold;
+  border-right: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.challengeBar75 {
+  width: 75%;
+  height: 100%;
+  background-color: #ffad33;
+  border-right: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.challengeBar100 {
+  width: 100%;
+  height: 100%;
+  background-color: #cc0000;
+  border-right: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.tools {
+  width: 93%;
+  height: 100%;
+  background-color: rgb(240, 240, 240);
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 40px 10px 40px;
+}
+
+
+.regularTable {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.regularTable td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.regularTable tr:nth-child(even){background-color: #f2f2f2;}
+
+.regularTable tr:hover {background-color: #ddd;}
+
+.regularTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
 }
