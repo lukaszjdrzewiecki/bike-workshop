@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import '../../index.css';
 import Page from '../../Page/page';
 import FrameIcon from '../../../resources/frame.png';
+import DriveIcon from '../../../resources/drivetrain.png';
+import WheelIcon from '../../../resources/wheel.png';
+import ForkIcon from '../../../resources/fork.png';
 
 const paragraphs = [
     <div>W tej sekcji dowiesz się jak w warunkach zarówno warsztatowych jak i domowych dokonać napraw lub usprawnień swojej maszyny. 
@@ -25,6 +28,7 @@ const paragraphs = [
             dokonywanie czynności oznaczonych tym kolorem w warunkach domowych - wymagają kosztownych narzędzi bez których naprawa
             nie będzie możliwa, a których zastąpienie lub pominięcie spowoduje nieodwracalne szkody w rowerze. SORRY.</div>,
     <div>Mając te informacje, zapraszam do lektury!</div>,
+
     <div><h1>Rama <img className="icon" src={FrameIcon} alt="frame"></img></h1>
         <ul>
             <li><a href="/service/headset/1">Wymiana sterów</a></li>
@@ -33,6 +37,30 @@ const paragraphs = [
             <li>Wymiana mostka</li>
         </ul>
     </div>,
+    <div><h1>Napęd <img className="icon" src={DriveIcon} alt="frame"></img></h1>
+    <ul>
+        <li><a href="/service/headset/1">Sprawdzenie zużycia napędu</a></li>
+        <li>Kaseta</li>
+        <li>Wymiana łańcucha</li>
+        <li>Wymiana zębatek korby</li>
+    </ul>
+</div>,
+<div><h1>Amortyzator <img className="icon" src={ForkIcon} alt="frame"></img></h1>
+        <ul>
+            <li><a href="/service/headset/1">Czyszczenie</a></li>
+            <li>Wymiana uszczelek</li>
+            <li>Wymiana oleju</li>
+            <li>Serwis miesięczny</li>
+        </ul>
+    </div>,
+    <div><h1>Koła <img className="icon" src={WheelIcon} alt="frame"></img></h1>
+    <ul>
+        <li><a href="/service/headset/1">Centrowanie</a></li>
+        <li>Zaplatanie</li>
+        <li>Centrowanie</li>
+        <li>Serwis piast</li>
+    </ul>
+</div>
 ]
 
     

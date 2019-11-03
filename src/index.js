@@ -11,6 +11,10 @@ import Products from './Component/Content/Products/products';
 import Main from './Component/Content/main';
 import Headset from './Component/Content/Service/headset';
 import HeadsetType from './Component/Content/Compatibility/headsetType';
+import TyreToRim from './Component/Content/Compatibility/tyres';
+import BottomBracketArticle from './Component/Content/Compatibility/bottomBracket';
+import CassetteArticle from './Component/Content/Compatibility/cassette';
+
 
 
 import { BrowserRouter, Route} from "react-router-dom";
@@ -27,7 +31,10 @@ class App extends React.Component {
         <BrowserRouter> 
             <Route path="/service" exact component={Service}/>  
             <Route path="/service/headset/1" exact component={Headset}/>
-            <Route path="/compatibility/headset/1" exact component={HeadsetType}/>
+            <Route path="/compatibility/frame/headset" exact component={HeadsetType}/>
+            <Route path="/compatibility/frame/bottom-bracket" exact component={BottomBracketArticle}/>
+            <Route path="/compatibility/wheel/tyre-to-rim" exact component={TyreToRim}/>
+            <Route path="/compatibility/drivetrain/cassette" exact component={CassetteArticle}/>
             <Route path="/compatibility" exact component={Compatibility}/>
             <Route path="/maintenance" component={Maintenance}/>  
             <Route path="/about" component={About}/>  
@@ -43,6 +50,7 @@ ReactDOM.render(
 
     <App/>, 
     document.querySelector('#root'),
+    //document.getElementById('App)
     
 );
 
