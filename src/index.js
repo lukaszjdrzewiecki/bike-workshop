@@ -28,8 +28,8 @@ class App extends React.Component {
         <div>
         <Logo />
         <Navbar />
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
-            <Route path="/service" exact component={Service}/>  
+        <BrowserRouter basename="https://lukaszjdrzewiecki.github.io/bike-workshop/">
+            <Route exact path="/service" component={Service}/>
             <Route path="/service/headset/1" exact component={Headset}/>
             <Route path="/compatibility/frame/headset" exact component={HeadsetType}/>
             <Route path="/compatibility/frame/bottom-bracket" exact component={BottomBracketArticle}/>
@@ -39,8 +39,8 @@ class App extends React.Component {
             <Route path="/maintenance" component={Maintenance}/>  
             <Route path="/about" component={About}/>  
             <Route path="/products" component={Products}/>
-            <Route path="/" exact component={Main}/>    
-        </BrowserRouter>  
+            <Route path="/" exact component={Main}/>
+        </BrowserRouter>
         </div>
         );
     }
