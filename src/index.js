@@ -28,7 +28,7 @@ class App extends React.Component {
         <div>
         <Logo />
         <Navbar />
-        <BrowserRouter basename="https://lukaszjdrzewiecki.github.io/bike-workshop/">
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Route exact path="/service" component={Service}/>
             <Route path="/service/headset/1" exact component={Headset}/>
             <Route path="/compatibility/frame/headset" exact component={HeadsetType}/>
@@ -48,10 +48,10 @@ class App extends React.Component {
  
 ReactDOM.render(
 
-    <App/>, 
+    <App/>,
     document.querySelector('#root'),
     //document.getElementById('App)
-    
+
 );
 
 export default App;
