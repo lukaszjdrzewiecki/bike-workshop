@@ -28,7 +28,7 @@ class App extends React.Component {
         <div>
         <Logo />
         <Navbar />
-        <BrowserRouter> 
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Route path="/service" exact component={Service}/>  
             <Route path="/service/headset/1" exact component={Headset}/>
             <Route path="/compatibility/frame/headset" exact component={HeadsetType}/>
