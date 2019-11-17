@@ -38,7 +38,7 @@ const paragraphs = [
     <div><h1>Koła <img className="icon" src={WheelIcon} alt="frame"></img></h1>
     <ul>
         <li><a href="/compatibility/wheel/tyre-to-rim">Stosunek szerokośći opony do obręczy</a></li>
-        <li>Zaplatanie</li>
+        <li><a href="/compatibility/wheel/hub">Piasty</a></li>
         <li>Centrowanie</li>
         <li>Serwis piast</li>
     </ul>
