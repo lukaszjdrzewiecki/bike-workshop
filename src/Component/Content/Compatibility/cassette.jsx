@@ -2,6 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import '../../index.css';
 import Page from '../../Page/page';
+import ContentTile from '../../Page/contentTile';
+import ImageShimanoFreeWheel from '../../../resources/wheel/freewheelTypes/ShimanoFreewheel.jpeg';
+import ImageCampagnoloFreeWheel from '../../../resources/wheel/freewheelTypes/CampagnoloFreewheel.jpeg';
+import ImageShimanoSplineFreeWheel from '../../../resources/wheel/freewheelTypes/ShimanoSplineFreewheel.jpeg';
+import ImageSramFreeWheel from '../../../resources/wheel/freewheelTypes/SramFreewheel.jpg';
 
 
 const TableCassetteDimensions = () => {
@@ -9,14 +14,27 @@ const TableCassetteDimensions = () => {
     <div>
     <table className="regularTable">
     <tr>
-     <td>Tyre mm</td>
-     <td>Rim width in mm</td>
+     <td>Typ</td>
+     <td>Szerokość kasety</td>
+     <td>Szerokość bębenka</td>
    </tr>
+     <td>Shimano 11</td>
      <td></td>
-     <td></td>
-     <td></td>
+     <td>36.75</td>
    <tr>
-
+     <td>Shimano 10</td>
+     <td>34.9</td>
+     <td>37.2</td>
+   </tr>
+   <tr>
+     <td>Shimano 9</td>
+     <td>36.5</td>
+     <td></td>
+   </tr>
+   <tr>
+     <td>Shimano 8/7/6</td>
+     <td>35.4</td>
+     <td></td>
    </tr>
   </table>
   </div>
@@ -25,11 +43,42 @@ const TableCassetteDimensions = () => {
 
 const paragraphs = [
     <div>
-    W tym artykule kompletnie pomijam aspekt związany z bieżnikiem, sensem instalowania pewnego rodzaju opon w różnych typach roweru, oraz jakie są najlepsze modele i marki.
-    Na warsztat weźmiemy zatem wyłącznie aspekt techniczny, czyli jaki jest dopuszczalny i optymalny rozmiar opony w stosunku do obręczy i ramy. 
-    Dla wszystkich, którzy są zieloni w kwestiach obowiązujących na rynku oznaczeniach szerokości pozostawiam poniższe tabelki.
+    Kaseta to element kluczowy dla każdego napędu, w największej mierze wpływając na dostępne przełożenia. 
+    Jednocześnie nie sposób jest omówić temat kaset, nie poruszając tematu istniejących standardów bębenków piast.
+    Na rynku najpopularniejszym standardem jest oczywiście klasyczny typ shimano. W zasadzie w 90% przypadków rower będzie miał właśnie taki typ.
+    W związku z coraz wyraźniejszą ekspansją SRAM, zwłaszcza za sprawą napędów typu Eagle, w ostatnich latach coraz łatwiej można spotkać także bębenki tej firmy.
+    Wreszcie ostatnim typem, spotykanym bardzo rzadko i wyłącznie w rowerach z górnej półki, są bębenki Campagnolo.
     </div>,
     <TableCassetteDimensions/>, 
+    <div><h2>Typy bębenków</h2></div>,
+    <ContentTile
+    imageSource = {ImageShimanoFreeWheel}
+    name = "Shimano"
+    content = {<div>
+      typ shimano bębenka
+      </div>}
+    />,
+    <ContentTile
+    imageSource = {ImageSramFreeWheel}
+    name = "Sram"
+    content = {<div>
+      typ sram bębenka
+      </div>}
+    />,
+    <ContentTile
+    imageSource = {ImageCampagnoloFreeWheel}
+    name = "Campagnolo"
+    content = {<div>
+      typ campagnolo bębenka
+      </div>}
+    />,
+    <ContentTile
+    imageSource = {ImageShimanoSplineFreeWheel}
+    name = "Shimano Spline"
+    content = {<div>
+      typ shimano spline bębenka
+      </div>}
+    />,
     <div>
     </div>
 ]
