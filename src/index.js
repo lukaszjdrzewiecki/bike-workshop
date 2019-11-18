@@ -40,7 +40,7 @@ class App extends React.Component {
             <Route path="/maintenance" component={Maintenance}/>  
             <Route path="/about" component={About}/>  
             <Route path="/products" component={Products}/>
-            <Route path="/" exact component={Main}/>
+            <Route path="/" exact component={Service}/>
         </BrowserRouter>
         </div>
         );
