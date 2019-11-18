@@ -19,16 +19,13 @@ import HubCompatibilityArticle from './Component/Content/Compatibility/hub';
 
 import { BrowserRouter, Route} from "react-router-dom";
 
-
-
- 
 class App extends React.Component {
     render () {
         return (
         <div>
         <Logo />
-        <Navbar />
         <BrowserRouter basename={process.env.PUBLIC_URL}>
+            <Navbar />
             <Route exact path="/service" component={Service}/>
             <Route path="/service/headset/1" exact component={Headset}/>
             <Route path="/compatibility/frame/headset" exact component={HeadsetType}/>
@@ -37,8 +34,8 @@ class App extends React.Component {
             <Route path="/compatibility/wheel/tyre-to-rim" exact component={TyreToRim}/>
             <Route path="/compatibility/drivetrain/cassette" exact component={CassetteArticle}/>
             <Route path="/compatibility" exact component={Compatibility}/>
-            <Route path="/maintenance" component={Maintenance}/>  
-            <Route path="/about" component={About}/>  
+            <Route path="/maintenance" component={Maintenance}/>
+            <Route path="/about" component={About}/>
             <Route path="/products" component={Products}/>
             <Route path="/" exact component={Service}/>
         </BrowserRouter>
@@ -46,7 +43,7 @@ class App extends React.Component {
         );
     }
 }
- 
+
 ReactDOM.render(
 
     <App/>,
