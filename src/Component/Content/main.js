@@ -6,7 +6,7 @@ import Page from '../Page/page';
 
 const paragraphs = [
 <div>
-    Bike Workshop to strona w całości poświęcona rowerom.
+    Bike Workshop to strona w całości poświęcona rowerom...........
     Znajdziesz tutaj kompletne informacje dotyczące serwisu, konserwacji i kompatybilności.
     Wszystkie informacje i poradniki są przeznaczone zarowóno dla całkowitych amatorów jak i profesjonalnych mechaników.
 </div>,

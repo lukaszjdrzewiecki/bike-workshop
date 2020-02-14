@@ -40,7 +40,7 @@ const paragraphs = [
     </div>,
     <div><h1>Napęd <img className="icon" src={DriveIcon} alt="frame"></img></h1>
     <ul>
-        <li><a href="/service/headset/1">Sprawdzenie zużycia napędu</a></li>
+        <li><a href="/service/fssds">Sprawdzenie zużycia napędu</a></li>
         <li>Kaseta</li>
         <li>Wymiana łańcucha</li>
         <li>Wymiana zębatek korby</li>
