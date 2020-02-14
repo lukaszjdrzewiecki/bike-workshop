@@ -24,8 +24,13 @@ class App extends React.Component {
         return (
         <div>
         <Logo />
+<<<<<<< HEAD
         <Navbar />
         <Router basename={process.env.PUBLIC_URL}>
+=======
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
+            <Navbar />
+>>>>>>> 154005127fa0f23043e27aec9751b8f0de889fd6
             <Route exact path="/service" component={Service}/>
             <Route path="/service/headset/1" exact component={Headset}/>
             <Route path="/compatibility/frame/headset" exact component={HeadsetType}/>
@@ -34,8 +39,8 @@ class App extends React.Component {
             <Route path="/compatibility/wheel/tyre-to-rim" exact component={TyreToRim}/>
             <Route path="/compatibility/drivetrain/cassette" exact component={CassetteArticle}/>
             <Route path="/compatibility" exact component={Compatibility}/>
-            <Route path="/maintenance" component={Maintenance}/>  
-            <Route path="/about" component={About}/>  
+            <Route path="/maintenance" component={Maintenance}/>
+            <Route path="/about" component={About}/>
             <Route path="/products" component={Products}/>
             <Route path="/" exact component={Main}/>
         </Router>
@@ -43,7 +48,7 @@ class App extends React.Component {
         );
     }
 }
- 
+
 ReactDOM.render(
 
     <App/>,
