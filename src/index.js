@@ -16,19 +16,16 @@ import BottomBracketArticle from './Component/Content/Compatibility/bottomBracke
 import CassetteArticle from './Component/Content/Compatibility/cassette';
 import HubCompatibilityArticle from './Component/Content/Compatibility/hub';
 
-
-import { BrowserRouter, Route} from "react-router-dom";
-
+import {BrowserRouter as Router, Route} from "react-router-dom";
 
 
- 
 class App extends React.Component {
     render () {
         return (
         <div>
         <Logo />
         <Navbar />
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <Router basename={process.env.PUBLIC_URL}>
             <Route exact path="/service" component={Service}/>
             <Route path="/service/headset/1" exact component={Headset}/>
             <Route path="/compatibility/frame/headset" exact component={HeadsetType}/>
@@ -41,7 +38,7 @@ class App extends React.Component {
             <Route path="/about" component={About}/>  
             <Route path="/products" component={Products}/>
             <Route path="/" exact component={Main}/>
-        </BrowserRouter>
+        </Router>
         </div>
         );
     }

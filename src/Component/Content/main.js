@@ -28,7 +28,7 @@ const Main = () => {
             menu2="serws"
             menu3="serwis"
 
-            title="Siema pedalarzu!"
+            title="Siema pedalarzu! test"
             paragraphs={paragraphs}
 
         />
