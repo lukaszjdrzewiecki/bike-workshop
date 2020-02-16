@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/bike-workshop/static/css/main.afeede5b.chunk.css",
+    "main.js": "/bike-workshop/static/js/main.0a932d90.chunk.js",
+    "main.js.map": "/bike-workshop/static/js/main.0a932d90.chunk.js.map",
+    "runtime-main.js": "/bike-workshop/static/js/runtime-main.ace27181.js",
+    "runtime-main.js.map": "/bike-workshop/static/js/runtime-main.ace27181.js.map",
+    "static/js/2.3c59f30c.chunk.js": "/bike-workshop/static/js/2.3c59f30c.chunk.js",
+    "static/js/2.3c59f30c.chunk.js.map": "/bike-workshop/static/js/2.3c59f30c.chunk.js.map",
+    "index.html": "/bike-workshop/index.html",
+    "precache-manifest.4869565c14f2036e9d72e109e44fe824.js": "/bike-workshop/precache-manifest.4869565c14f2036e9d72e109e44fe824.js",
+    "service-worker.js": "/bike-workshop/service-worker.js",
+    "static/css/main.afeede5b.chunk.css.map": "/bike-workshop/static/css/main.afeede5b.chunk.css.map",
+    "static/media/BikeLogo.png": "/bike-workshop/static/media/BikeLogo.f90acdbb.png",
+    "static/media/CampagnoloFreewheel.jpeg": "/bike-workshop/static/media/CampagnoloFreewheel.a132c813.jpeg",
+    "static/media/EC.jpg": "/bike-workshop/static/media/EC.f99c618c.jpg",
+    "static/media/IS.jpg": "/bike-workshop/static/media/IS.1b135ffc.jpg",
+    "static/media/ShimanoFreewheel.jpeg": "/bike-workshop/static/media/ShimanoFreewheel.ed9df551.jpeg",
+    "static/media/ShimanoSplineFreewheel.jpeg": "/bike-workshop/static/media/ShimanoSplineFreewheel.bbeb490b.jpeg",
+    "static/media/SramFreewheel.jpg": "/bike-workshop/static/media/SramFreewheel.ab16bd29.jpg",
+    "static/media/Thread.jpg": "/bike-workshop/static/media/Thread.a9b396f2.jpg",
+    "static/media/ZS.jpg": "/bike-workshop/static/media/ZS.f0115a1d.jpg",
+    "static/media/companyLogo.png": "/bike-workshop/static/media/companyLogo.8a553af5.png",
+    "static/media/drivetrain.png": "/bike-workshop/static/media/drivetrain.c8e60832.png",
+    "static/media/frame.png": "/bike-workshop/static/media/frame.408c5607.png",
+    "static/media/hub.png": "/bike-workshop/static/media/hub.76ea7450.png",
+    "static/media/wheel.png": "/bike-workshop/static/media/wheel.be36551f.png"
+  }
+}
